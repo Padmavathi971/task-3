@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>My Simple Webpage</title>
+<link rel="stylesheet" type="text/css" href="styles.css">
+<script>
+ function validateForm(){
+    varname=document.forms["Form"]["name"].value;
+    varemail=document.forms["Form"]["email"].value;
+      if(name==" "||email==" "){
+           alert("please fill out all the details");
+            return false;
+  }
+}
+</script>
+</head>
+<body>
+<header>
+<h1s>Welcome to My Simple Webpage</h1>
+</header>
+<nav>
+<ul>
+<li><a href="#">Home</a></li>
+<li><a href="#">About</a></li>
+<li><a href="#">Contact</a></li>
+</ul>
+</nav><br><br>
+ <form name="Form" onsubmit="return validateForm()">
+      <label for="name">Name:</label>
+      <input type="text" id="name" name="name"><br><br>
+      <label for="email">Email:</label>
+      <input type="email" id="email" name="email"><br><br>
+  <select id="menu">
+       	<option value="">Select a course</option>
+        <option value="CSE">CSE</option>
+        <option value="ECE">ECE</option>
+        <option value="EEE">EEE</option>
+        <option value="IT">IT</option>
+        <option value="MECH">MECH</option>
+  </select><br><br>
+  <input type="submit" value="Submit">
+  <input type="reset" value="Reset">
+ </form>
+ 
+<main>
+<section>
+<h2>About Me</h2>
+<p>Hello! My name is Padmavathi. I am a web developer.</p>
+</section>
+<section>
+<h2>Contact Me</h2>
+<p>Email: padmavathikadimisetty2006@gmail.com</p>
+</section>         
+<p>Phone: 9949806510</p>
+</main>
+<footer>
+<p>&copy; 2024 My Simple Webpage. All rights reserved.</p>
+</footer>
+</body>
+</html>
